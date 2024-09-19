@@ -25,6 +25,50 @@ emotions = st.selectbox("select emotion",
 index=None,placeholder="choose You option..",
 )
 
+#video previews
+tab1, tab2, tab3 = st.tabs(["Anger", "Happy","Sad"])
+
+with tab1:
+  col1, col2 = st.columns(2)
+  with col1:
+    st.header("anger")
+    st.video("anger.mp4",format="video/mp4")
+
+  with col2:
+    st.header("anger1")
+    st.video("anger1.mp4",format="video/mp4")  
+
+with tab2:
+  col1, col2 = st.columns(2)
+  with col1:
+    st.header("happy")
+    st.video("happy.mp4",format="video/mp4")
+  with col2:
+    st.header("smile")
+    st.video("smile.mp4",format="video/mp4")
+
+with tab3:
+  col1, col2, col3, col4, col5 = st.columns(5)
+  with col1:
+    st.header("sad1")
+    st.video("sad1.mp4",format="video/mp4")
+
+  with col2:
+    st.header("sad2")
+    st.video("sad2.mp4",format="video/mp4")
+
+  with col3:
+    st.header("sad3")
+    st.video("sad3.mp4",format="video/mp4") 
+
+  with col4:
+    st.header("sad4")
+    st.video("sad4.mp4",format="video/mp4")
+
+  with col5:
+    st.header("sad5")
+    st.video("sad5.mp4",format="video/mp4")  
+
 
 video = f"{emotions}.mp4"
 output_video = f"temp_image--{emotions}.mp4"
